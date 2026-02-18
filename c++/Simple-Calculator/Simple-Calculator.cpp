@@ -1,18 +1,11 @@
-import java.util.*;
-public class Main
+#include <iostream>
+using namespace std;
+int main()
 {
-	public static void main(String[] args) {
-	    Scanner scan = new Scanner(System.in);
-        long a = scan.nextInt();
-        long b = scan.nextInt();
-        long sum , sub ;
-        long  mul;
-         sum=a+b;
-         mul=a*b;
-         sub=a-b;
-        System.out.println( + a + " + " + b + " = "+ sum);
-        System.out.println( + a + " * " + b + " = "+ mul);
-        System.out.println( + a + " - " + b + " = "+ sub);
-       
-	}
+    long long a, b;
+    cin >> a >> b;
+    cout << a << "+" << b << "=" << a+b << endl;
+    cout << a << "*" << b << "=" << a*b << endl;
+    cout << a << "-" << b << "=" << a-b << endl;
+    return 0;
 }
