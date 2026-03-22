@@ -6,7 +6,7 @@ int main()
     cin>>n;
     a=n/10;
     b=n%10;
-    if((a%b==0)||(b%a==0)) {
+    if((b!=0&&a%b==0)||(a!=0&&b%a==0)){
         cout<<"YES";
     }
     else{
