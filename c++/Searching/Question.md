@@ -21,13 +21,6 @@ Output
 1
 
 Input
-5
-1 3 0 4 5
-10
-Output
--1
-
-Input
 4
 2 3 2 1
 2
