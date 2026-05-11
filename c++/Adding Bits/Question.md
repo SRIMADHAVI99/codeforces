@@ -9,7 +9,7 @@ Peter Parker had worked hard throughout his digital logic course, but when he wa
 Now, he has to write an efficient program that would take 2 unsigned 32 bit decimal numbers as input, and reproduce the output by adding them in the same way as his circuit does.
 
 Input
-Only One line containing two decimal numbers A and B (0≤A,B≤109).
+Only One line containing two decimal numbers A and B (0≤A,B≤10^9).
 
 Output
 Print the value after adding A and B in Peter Parker's way.
