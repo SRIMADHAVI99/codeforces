@@ -1,40 +1,32 @@
 #include <iostream>
-#include <vector>
+#include <string>
 #include <algorithm>
-
 using namespace std;
 
-int main()
-{
+int main() {
     int t;
     cin >> t;
 
-    while(t--){
-        int n, k;
-        cin >> n >> k;
+    while (t--) {
+        int n;
+        cin >> n;
 
-        vector<int> a(n);
+        string s;
+        cin >> s;
 
-        for(int i = 0; i < n; i++){
-            cin >> a[i];
+        int cnt = 1;
+        int mx = 1;
+
+        for (int i = 1; i < n; i++) {
+            if (s[i] == s[i - 1]) {
+                cnt++;
+            } else {
+                cnt = 1;
+            }
+            mx = max(mx, cnt);
         }
 
-        sort(a.begin(), a.end());
-
-        int count = 1, sum = 1;
-
-        for(int i = 0; i < n - 1; i++){
-            if(a[i + 1] - a[i] <= k){
-                count++;
-            }
-            else{
-                count = 1;
-            }
-
-            sum = max(sum, count);
-        }
-
-        cout << n - sum << endl;
+        cout << mx + 1 << endl;
     }
 
     return 0;
