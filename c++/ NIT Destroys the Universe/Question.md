@@ -16,7 +16,7 @@ The first line of each test case contains one integer n (1≤n≤10^5).
 
 The second line of each test case contains n integers a1, a2, …, an (0≤ai≤10^9).
 
-It is guaranteed that the sum of n over all test cases does not exceed 2⋅105.
+It is guaranteed that the sum of n over all test cases does not exceed 2⋅10^5.
 
 Output
 For each test case, print one integer — the answer to the problem.
