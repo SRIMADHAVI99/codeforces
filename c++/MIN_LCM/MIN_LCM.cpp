@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
@@ -10,16 +9,19 @@ int main() {
         long long n;
         cin >> n;
 
-        long long d = 2;
+        long long d = 0;
 
-        while (n % d != 0) {
-            d++;
+        for (long long i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                d = i;
+                break;
+            }
         }
 
-        long long a = n / d;
-        long long b = n - a;
+        if (d == 0)
+            d = n;
 
-        cout << a << " " << b << endl;
+        cout << n / d << " " << n - n / d << endl;
     }
 
     return 0;
